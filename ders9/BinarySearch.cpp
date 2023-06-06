@@ -46,11 +46,9 @@ int binarySearch(int arr[],int x,int r,int l){
     return -1;
 }
 
-int main(){
-    
-    cout << "Lütfen aradiginiz degeri giriniz: ";
-    cin >> key;
-
-    
-
+void print_arr(int arr[],int size){
+    for(int i=0;i<size;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
 }
