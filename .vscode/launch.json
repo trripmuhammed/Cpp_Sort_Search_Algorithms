@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/rizel/Desktop/2.dönemC++",
-      "program": "c:/Users/rizel/Desktop/2.dönemC++/build/Debug/outDebug",
+      "cwd": "c:/Users/rizel/Desktop/2.dönemC++/.Sıralama_Algoritmaları",
+      "program": "c:/Users/rizel/Desktop/2.dönemC++/.Sıralama_Algoritmaları/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
