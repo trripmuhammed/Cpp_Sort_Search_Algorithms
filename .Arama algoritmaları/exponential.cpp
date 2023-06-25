@@ -18,6 +18,7 @@ int exponential_search(int array[], int start, int end, int key){
 	if((end-start)<=0)
 	return -1;
 	int i=1; 
+	//surekli i ile 2i arasinda bir bolge alip key in bolgede olup olmadigini kontrol ediyoruz
 	while(i<(end-start)){
 		if(array[i]<key)
 		i*=2;
@@ -25,6 +26,7 @@ int exponential_search(int array[], int start, int end, int key){
 		break;
 		
 	}
+	//dogru bolge bulununca binarySearch ile elemanimizi buluyoruz
 	return binary_search(array, i/2, i, key);
 }
 

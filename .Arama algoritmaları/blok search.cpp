@@ -6,14 +6,15 @@ int jump_Search(int a[], int n, int item) {
    int i = 0;
    int m = sqrt(n); //initializing block size= ?(n)
 
-   while(a[m] <= item && m < n) { 
-      // the control will continue to jump the blocks 
-      i = m;  // shift the block
+   while(a[m] <= item && m < n) {   
+      //bir bolge secimi yapıyoruz
+      i = m;
       m += sqrt(n);
+      //while dongusu dondukce sectigimiz bolgeyi surekli ileri tasiyoruz
       if(m > n - 1)  // if m exceeds the array size
          return -1; 
    }
-
+   //yukarda dogru bolgeyi bulduktan sonra burda linear search ile o bolgedeki elemani buluyoruz
    for(int x = i; x<m; x++) { //linear search in current block
       if(a[x] == item)
          return x; //position of element being searched 

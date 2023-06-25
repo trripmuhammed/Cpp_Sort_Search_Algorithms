@@ -10,12 +10,15 @@ int main()
 	while((ilk<=son) && (k!=1))
 	{
 		orta=(int) floor((ilk+son)/2);
+		//aradigimiz deger dizinin sol tarafindaysa calisir ve diziyi boler
 		if (ara<dizi[orta]) son=orta-1;
+		//aradigimiz deger dizinin sag tarafindaysa calisir ve diziyi boler
 		else if(ara>dizi[orta]) ilk=orta+1;
+		//aradigimiz deger dizinin ortanca degeriyse calisir
 		else k=1; 
 	}
 	if(k==1) cout<<"\nAradiginiz deger"<<orta+1<<"sirada\n";
-	else cout<<"\nAradiginiz deger bulunamadý\n";
+	else cout<<"\nAradiginiz deger bulunamadï¿½\n";
 	return 0;
 	
 }

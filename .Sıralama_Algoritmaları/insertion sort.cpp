@@ -14,6 +14,10 @@ int main()
 		cout<<"A("<<i+1<<"):";
 		cin>>a[i];
 	}
+	//yukarda dizi olusturuldu
+
+
+	
 	for(i=1; i<n; i++)
 	{
 		g=a[i]; j=i-1;
